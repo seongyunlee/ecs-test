@@ -3,7 +3,7 @@
   "containerDefinitions": [
     {
       "name": "spring",
-      "image": "590184107250.dkr.ecr.ap-northeast-2.amazonaws.com/spring-boot:latest",
+      "image": "590184107250.dkr.ecr.ap-northeast-2.amazonaws.com/spring-ecs-test:latest",
       "cpu": 0,
       "portMappings": [
         {
