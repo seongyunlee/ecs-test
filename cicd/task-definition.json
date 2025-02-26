@@ -1,5 +1,5 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:590184107250:task-definition/spring-boot",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:590184107250:task-definition/ecs-test:1",
   "containerDefinitions": [
     {
       "name": "spring",
@@ -23,7 +23,7 @@
       "logConfiguration": {
         "logDriver": "awslogs",
         "options": {
-          "awslogs-group": "/ecs/spring-boot",
+          "awslogs-group": "/ecs/ecs-test",
           "mode": "non-blocking",
           "awslogs-create-group": "true",
           "max-buffer-size": "25m",
@@ -35,7 +35,8 @@
       "systemControls": []
     }
   ],
-  "family": "spring-boot",
+  "family": "ecs-test",
+  "taskRoleArn": "arn:aws:iam::590184107250:role/ecsTaskExecutionRole",
   "executionRoleArn": "arn:aws:iam::590184107250:role/ecsTaskExecutionRole",
   "networkMode": "awsvpc",
   "revision": 1,
@@ -56,6 +57,9 @@
     },
     {
       "name": "com.amazonaws.ecs.capability.docker-remote-api.1.28"
+    },
+    {
+      "name": "com.amazonaws.ecs.capability.task-iam-role"
     },
     {
       "name": "ecs.capability.execution-role-ecr-pull"
@@ -84,7 +88,7 @@
     "cpuArchitecture": "X86_64",
     "operatingSystemFamily": "LINUX"
   },
-  "registeredAt": "2025-02-18T11:34:02.037Z",
+  "registeredAt": "2025-02-26T14:28:03.492Z",
   "registeredBy": "arn:aws:iam::590184107250:root",
   "enableFaultInjection": false,
   "tags": []
