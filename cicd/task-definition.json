@@ -1,5 +1,5 @@
 {
-  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:590184107250:task-definition/spring-boot:1",
+  "taskDefinitionArn": "arn:aws:ecs:ap-northeast-2:590184107250:task-definition/spring-boot",
   "containerDefinitions": [
     {
       "name": "spring",
